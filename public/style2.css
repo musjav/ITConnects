@@ -1,0 +1,109 @@
+/* Base styles */
+/* body {
+  
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+   
+} */
+
+#nextpage {
+    padding-top: 100px;
+}
+
+.designing {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.aboutus {
+    width: 100%; /* Changed width to 100% to ensure responsiveness */
+   padding: 100px 20px 20px 20px;
+}
+
+.about-images {
+    margin-top: 20px;
+}
+
+.heading-box {
+    width: 100%;
+    background-color: #5F1C6C;
+    color: white;
+    padding: 20px 0px 20px 60px;
+}
+
+.sofware-designing {
+    width: 100%;
+    padding: 100px;
+    font-size: 18px;
+}
+
+.para {
+    padding: 50px;
+    font-size: 18px;
+}
+
+.para img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 31px 7px rgba(0, 0, 0, 0.49);
+    -webkit-box-shadow: 0px 0px 31px 7px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 0px 0px 31px 7px rgba(0, 0, 0, 0.49);
+}
+
+.para div {
+    padding: 20px 0px 20px 0px;
+}
+
+.big-para {
+    font-size: 15px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .heading-box {
+        padding: 20px;
+    }
+    .sofware-designing {
+        padding: 50px;
+        font-size: 16px;
+    }
+    .para {
+        padding: 30px;
+        font-size: 16px;
+    }
+    .big-para {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* Adjustments for even smaller screens */
+    .heading-box {
+        padding: 10px;
+    }
+    .sofware-designing {
+        padding: 30px;
+        font-size: 14px;
+    }
+    .para {
+        padding: 20px;
+        font-size: 14px;
+    }
+    .big-para {
+        font-size: 12px;
+    }
+}
+
+#submit{
+    text-align: center;
+padding-bottom:10px ; 
+padding-top:10px ; 
+padding-left: 10px ;
+padding-right: 10px ;
+}
+.services{
+    padding-top: 100px;
+}

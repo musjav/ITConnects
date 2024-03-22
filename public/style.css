@@ -1,0 +1,734 @@
+
+body {
+    
+    background-color: #ff0000;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* min-width: 320px;
+    min-height: 250px; */
+}
+
+@media screen and (max-width: 1024px){
+    .image-container .musjav{
+        overflow: hidden;
+       width: 210px;
+       height: 180px;
+       
+    }
+}
+@media screen and (max-width: 768px) {
+    body{
+        background-color: #ff0000;
+    }
+    .image-container .musjav{
+        /* overflow: hidden; */
+       width: 240px;
+       height: 160px;
+       
+    }
+    .image-container .collab-box{
+        margin: 10px;
+    }
+    .nav {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .color-box {
+      width: 100%;
+    }
+  
+    .small-card {
+      width: 100%;
+    }
+  
+    .image-container {
+      width: 100%;
+    }
+  
+    .progress-container {
+      width: 100%;
+    }
+  
+    .footer {
+      width: 100%;
+    }
+  }
+@media screen and (min-width: 320px) {
+    body{
+        background-color: #ff0000;
+    }
+    
+
+
+/* .third-page {
+    padding: 90px;
+    
+
+} */
+
+    .nav {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .color-box {
+      width: auto;
+    }
+  
+    .small-card {
+      width: auto;
+    }
+  
+    .image-container {
+      width: auto;
+    }
+  
+    .progress-container {
+      width: auto;
+    }
+  
+    .footer {
+      width: auto;
+    }
+  }
+.nav-links {
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    padding: 20px 10px 20px 10px;
+    transition: 0.5s;
+    background-color: #5e575f00;
+}
+
+.nav-links:hover {
+
+    background-color: #a91bc6;
+}
+
+.menu-logo {
+    display: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid #5F1C6C;
+}
+button {
+    background-color: #5F1C6C;
+    border-radius: 5px !important;
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    transition: 0.5s;
+}
+
+.button button:hover {
+
+    background-color: white;
+    color: black;
+    border: 2px solid #5F1C6C;
+}
+.slide-button:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    border: none;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    background-color: #31063195;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    box-shadow: 0px 15px 18px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 15px 18px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 15px 18px 2px rgba(0, 0, 0, 0.75);
+   
+
+}
+
+.nav-side-links{
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+align-items: start;
+justify-content: left;
+text-decoration: none;
+color: white;
+}
+.nav-side-links:hover{
+   font-weight: 600;
+    color: #000000;
+}
+.nav-logo {
+    text-align: left;
+}
+.nav-side-content{
+   width: 100%;
+ padding: 20px;
+    color: white;
+  
+
+
+}
+.nav-side-content div{
+    margin: 20px;
+}
+.nav-side-content p{
+    font-size: 10px;
+}
+.side-menu {
+   
+    display: none;
+    overflow: hidden;
+    background-color: #5F1C6C;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: -6px 0px 15px 0px rgba(0,0,0,0.76);
+    -webkit-box-shadow: -6px 0px 15px 0px rgba(0,0,0,0.76);
+    -moz-box-shadow: -6px 0px 15px 0px rgba(0,0,0,0.76);
+}
+
+.nav-side-content {
+    height: calc(100% - 40px); /* Adjust the height as needed */
+    overflow-y: auto;
+}
+
+.menu-logo i {
+    color: white;
+    background-color: #a91bc6;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 638px) {
+    .menu-logo {
+        position: absolute;
+        width: 100%;
+        padding: 20px;
+        align-items: center;
+        justify-content: right;
+        display: flex;
+    }
+
+    .nav-logo {
+        padding-right: 150px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    .side-menu.active {
+        /* font-size: ; */
+        display: block;
+        left: 50%;
+       
+    }
+.content{
+    padding: 0;
+}
+}
+
+.redbox {
+
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+    background-color: #5F1C6C;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0px 10px 27px -7px rgba(0, 0, 0, 0.74);
+    -webkit-box-shadow: 0px 10px 27px -7px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: 0px 10px 27px -7px rgba(0, 0, 0, 0.74);
+
+}
+
+.redbox h2 {
+
+    font-weight: 700;
+}
+
+.started {
+    border-radius: 50px;
+    background-color: rgb(62, 1, 62);
+    color: white;
+    border: white 2px solid;
+    padding: 10px 40px;
+}
+
+.fifth-page h2 {
+    color: white;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.carousel-inner .carousel-item.active img {
+    transform: scale(1.1);
+}
+
+.carousel-caption {
+
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.firstpage {
+    background-image: url('https://inteconn.com/wp-content/uploads/2022/09/Map-e1663589059897.png');
+    background-size: cover;
+    /* padding-top: 150px;
+    padding-bottom: 150px; */
+}
+
+.content {
+
+    /* padding-left: 32px;
+    padding-right: 32px; */
+    text-align: center;
+}
+
+.content div {
+    margin: 50px;
+
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 1200px; 
+    /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding-top: 50px; /* Add some padding to the sides */
+    padding-bottom: 50px; /* Add some padding to the sides */
+    /* box-sizing: border-box; Include padding and border in the element's total width and height */
+}
+
+.color-box {
+    
+    text-align: center;
+    background-color: #5F1C6C;
+    margin: 20px;
+    padding: 20px 0px;
+    /* Adjust the right padding as needed */
+    border-radius: 5px;
+    box-sizing: border-box; 
+    transition: 0.2s;
+}
+
+.color-box:hover {
+    box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.75);
+    transform: scale(1.05);
+}
+
+.color-box ul {
+
+    padding: 0;
+    margin: 0;
+}
+
+.color-box li {
+    list-style: none;
+    line-height: 50px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.graybox {
+    background-color: rgb(204, 204, 204);
+    padding: 25px;
+    box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 18px 2px rgba(0, 0, 0, 0.75);
+}
+
+.third-page {
+    background-image: url('https://inteconn.com/wp-content/uploads/2022/09/services.png');
+   background-size: contain;
+
+}
+
+.third-page {
+    padding-top:50px ;
+    padding-bottom:50px ;
+    padding-left:20px ;
+    padding-right:20px ;
+    text-align: center;
+
+}
+
+
+.small-card {
+    overflow: hidden;
+    /* width: 100%; */
+    text-align: left;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid hsla(300, 70%, 29%, 0.616);
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.small-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.small-card li {
+
+    position: relative;
+    padding-left: 70px;
+    margin-bottom: 20px;
+}
+
+.small-card .logo {
+    border-radius: 10px;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    color: white;
+    background-color: #5F1C6C;
+}
+
+.small-card h4 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.small-card p {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.small-card a {
+    display: inline-block;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.small-card a:hover {
+    text-decoration: underline;
+}
+
+.content-two {
+    padding-top: 110px;
+    border-radius: 10px;
+    border: 2px solid rgb(95, 28, 108);
+    /* padding: 10px; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.center-heading {
+    text-align: center;
+
+    background-color: #ffffff;
+    color: #5F1C6C;
+    z-index: 2;
+    box-shadow: 0px 0px 31px 7px rgba(0, 0, 0, 0.49);
+    -webkit-box-shadow: 0px 0px 31px 7px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 0px 0px 31px 7px rgba(0, 0, 0, 0.49);
+}
+
+.last-purple {
+    background-color: #ffffff;
+    color: #5F1C6C;
+}
+
+.fourth-page {
+    padding-bottom: 90px;
+    background-color: #5F1C6C;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+.musjav {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin: 0;
+    /* Remove margin */
+    width: 300px;
+    /* Adjust width as needed */
+    height: 250px;
+    /* Adjust height as needed */
+}
+
+.musjav:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    z-index: 2;
+}
+
+.musjav:hover img {
+    transform: scale(1.2);
+    /* Increase the scale value for more zoom */
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.234);
+    /* Black overlay */
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+.musjav img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.fifth-page {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url('https://inteconn.com/wp-content/uploads/2018/09/section-bg-1.jpg');
+    text-align: center;
+
+}
+
+
+.progress-container {
+    position: relative;
+    /* width: 90%; */
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 5px;
+}
+@keyframes progress-bar-animation {
+    0% {
+        left: 0;
+        right: 100%;
+    }
+
+    50% {
+        left: 0;
+        right: 0;
+    }
+
+    100% {
+        left: 100%;
+        right: 0;
+    }
+}
+
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Add background color with transparency */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+    color: #ffffff;
+}
+
+.carousel-caption p {
+    font-size: 18px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+/* Customizations for your progress bar */
+.pbar-outer {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    background-color: #6a456a;
+    margin-top: 20px;
+}
+
+.pbar-text {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.bpercent {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.pbar-inner {
+    position: relative; /* Change to relative */
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    width: 0;
+    overflow: hidden;
+    transition: width 1s ease-in-out;
+}
+
+.candystrip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #ff0000 0%, rgb(255, 0, 0) 50%, rgb(255, 0, 0) 51%, rgb(255, 0, 0) 100%);
+    background-size: 20px 1px;
+    background-position: 0 0;
+    animation: progress-bar-animation 2s linear infinite;
+    transform: skewX(-30deg);
+}
+
+.carousel-item {
+    width: 100%;
+    height: auto;
+  }
+  @media screen and (max-width: 480px) {
+    .slide{
+        background-color: #5F1C6C;
+        padding-top: 80px;
+    }
+    .carousel-caption h1,
+    .carousel-caption p {
+      font-size: 12px;
+    }
+    /* // other styles for very small viewports */
+  }
+  @media screen and (max-width: 480px) {
+    .slide{
+        background-color: #5F1C6C;
+        padding-top: 80px;
+    }
+    .carousel-caption {
+      padding: 10px;
+    }
+    /* // other styles for very small viewports */
+  }
+  @media screen and (max-width: 480px) {
+    .slide{
+        background-color: #5F1C6C;
+        padding-top: 80px;
+    }
+    .carousel-caption {
+      height: auto;
+    }
+    /* // other styles for very small viewports */
+  }
+.inputs {
+    text-align: center;
+}
+.inputs textarea{
+    margin-left: 10px;
+}
+.contactus {
+    text-align: center;
+    
+}
+
+#name , #email , #subject{
+   
+
+
+    margin: 10px;
+    width: 90%;
+}
+#message{
+    height: 60px;
+    margin: 10px;
+    /* width: 90%; */
+}
+.lines {
+    width: 80%;
+}
+
+
+
+.pics img {
+    margin: 2px;
+    width: 90px;
+    height: 100px;
+}
+
+
+
+.footer {
+    /* width: 100%; */
+    text-align: left;
+    padding: 50px;
+    background-color: #5F1C6C;
+    color: #fff;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+    /* This removes the outline when the link is focused */
+}
